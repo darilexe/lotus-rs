@@ -1,0 +1,3 @@
+tap mountain(3)
+scroll target -> "Enemy Commander"*
+bolt(target)*

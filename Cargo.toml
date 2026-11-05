@@ -1,0 +1,12 @@
+[package]
+name = "lotus"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust port of the Lotus compiler: a Magic: The Gathering-inspired programming language"
+license = "MIT"
+
+[[bin]]
+name = "lotus"
+path = "src/main.rs"
+
+[dependencies]

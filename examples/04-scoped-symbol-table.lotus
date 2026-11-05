@@ -1,0 +1,6 @@
+tap mountain(3)
+mana global*
+{
+    mana local_target*
+    mana offsetlocal*
+}

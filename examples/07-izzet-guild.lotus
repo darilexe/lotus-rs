@@ -1,0 +1,8 @@
+tap izzet(5)
+
+mana life -> 20*
+scroll spell -> "Counterspell"*
+
+bolt(life)*
+stack(spell)*
+bolt spell*
