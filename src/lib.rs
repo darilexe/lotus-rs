@@ -213,7 +213,7 @@ pub fn run(source: &str) -> Report {
             Stmt::Command { cmd, arg, .. } => {
                 let value = resolve(arg, &sem.symbols);
                 if cmd == "bolt" {
-                    r.log.push(format!("👁 OUTPUT (BOLT): {value}"));
+                    r.log.push(format!("▶ OUTPUT (BOLT): {value}"));
                     r.output.push(value);
                 } else {
                     r.log.push(format!(

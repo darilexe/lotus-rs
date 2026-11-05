@@ -6,6 +6,16 @@ The original is a Python/Tkinter app where you drag cards and tap lands by hand.
 
 > Built with AI assistance (Claude) as a way to learn Rust by rebuilding a project I already know inside out.
 
+<p align="center"><img src="screenshots/run.png" alt="Running an Izzet guild program through all four compiler stages, ending with the symbol table" width="680"></p>
+
+## Screenshots
+
+| Error handling | Tests |
+| --- | --- |
+| ![A mana error stopping a program, and a missing delimiter being auto-recovered](screenshots/errors.png) | ![cargo test output with all 48 tests passing](screenshots/tests.png) |
+
+**Left:** `bolt` needs 2 red mana but only 1 was tapped, so nothing runs. Below it, a missing `*` is auto-inserted and the program still runs. **Right:** all 48 tests passing.
+
 ## Run it
 
 Requires [Rust](https://rustup.rs) 1.75 or later. There are no dependencies.
