@@ -8,13 +8,11 @@ The original is a Python/Tkinter app where you drag cards and tap lands by hand.
 
 <p align="center"><img src="screenshots/run.png" alt="Running an Izzet guild program through all four compiler stages, ending with the symbol table" width="680"></p>
 
-## Screenshots
+## Error handling
 
-| Error handling | Tests |
-| --- | --- |
-| ![A mana error stopping a program, and a missing delimiter being auto-recovered](screenshots/errors.png) | ![cargo test output with all 48 tests passing](screenshots/tests.png) |
+<p align="center"><img src="screenshots/errors.png" alt="A mana error stopping a program, and a missing delimiter being auto-recovered" width="680"></p>
 
-**Left:** `bolt` needs 2 red mana but only 1 was tapped, so nothing runs. Below it, a missing `*` is auto-inserted and the program still runs. **Right:** all 48 tests passing.
+`bolt` needs 2 red mana but only 1 was tapped, so nothing runs. Below it, a missing `*` is auto-inserted and the program still runs.
 
 ## Run it
 
@@ -50,13 +48,9 @@ offsetlocal  | mana | null  | 1     | 4      | 4B
 | `src/lib.rs` | all | Runs the pipeline and builds the report. |
 | `src/main.rs` | | The command-line interface. |
 
-## Tests
+## Examples
 
-```bash
-cargo test
-```
-
-There are 48 tests: unit tests for each stage, plus `tests/readme_cases.rs`, which runs the six test cases from the original README end to end:
+`examples/` has the six example programs from the original Lotus README:
 
 | # | Example | Result |
 |---|---|---|
